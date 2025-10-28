@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangladesh Liberation War</title>
+
+    <!-- tailwind + daisy Ui setup-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-base-100 shadow-sm">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn p-0 btn-ghost text-xl"
+            ><span class="w-[30px]">
+              <img src="./images//museum.svg" alt="" /></span
+            >Liberation</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Documents</a></li>
+            <li><a>Interview</a></li>
+            <li><a>Gallery</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Contact us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner / carousel -->
+    <div class="carousel w-full shadow-lg overflow-hidden relative">
+      <div class="carousel-item w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
+        <img
+          src="./images/bangladesh2.png"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="carousel-item w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
+        <img
+          src="./images/bangladesh3.jpg"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="carousel-item w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
+        <img
+          src="./images/bangladesh1.png"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- javascript for carousel -->
+    <script>
+      const carousel = document.querySelector(".carousel");
+      const slides = carousel.querySelectorAll(".carousel-item");
+      let index = 0;
+
+      setInterval(() => {
+        slides[index].classList.add("hidden"); // Next slide hide
+        index = (index + 1) % slides.length; // Next slide index
+        slides[index].classList.remove("hidden"); // Next slide showing
+      }, 3000); // slide change after every 3 seconds
+    </script>
+  </body>
+</html>
