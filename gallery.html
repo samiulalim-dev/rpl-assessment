@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Gallery</title>
     <!-- tailwind + daisy Ui setup-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -63,23 +63,80 @@
         </div>
       </div>
     </nav>
-    <div
-      class="card bg-base-100 min-h-[50vh] w-full max-w-sm mx-auto my-10 shrink-0 shadow-2xl"
-    >
-      <h2 class="text-center font-bold text-xl py-3">Contact With Us</h2>
-      <div class="card-body">
-        <fieldset class="fieldset">
-          <label class="label">Name</label>
-          <input type="text" class="input" placeholder="Name" />
-          <label class="label">Email</label>
-          <input type="email" class="input" placeholder="Email" />
-          <label class="label">Subject</label>
-          <input type="text" class="input" placeholder="Subject" />
-
-          <button class="btn btn-neutral mt-4">Send Message</button>
-        </fieldset>
+    <!-- photo Gallery -->
+    <section class="bg-white py-10 px-4 md:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800">
+          Liberation War Photo Gallery
+        </h2>
+        <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
+          A visual journey through the struggles, courage, and triumphs of the
+          Bangladesh Liberation War.
+        </p>
       </div>
-    </div>
+
+      <!-- Gallery Grid -->
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      >
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/national-memmorial.jpg"
+            alt="Freedom Fighters"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/bangladesh1.png"
+            alt="Liberation War Scene"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/bangladesh2.png"
+            alt="Freedom Fighters"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/bangladesh3.jpg"
+            alt="Muktijoddha Museum"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/betar-kendra.jpg"
+            alt="War Refugees"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/ff1.jpg"
+            alt="Bangladesh Flag 1971"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/ff2.jpg"
+            alt="Victory Celebration"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="./images/ff3.jpg"
+            alt="Mukti Bahini"
+            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+    </section>
     <!-- footer -->
     <footer
       class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10"

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview</title>
+    <!-- tailwind + daisy Ui setup-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-base-100 sticky top-0 z-10 shadow-sm">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./document.html">Documents</a></li>
+              <li><a href="./interview.html">Interview</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+          <a class="btn p-0 btn-ghost text-xl"
+            ><span class="w-[30px]">
+              <img src="./images//museum.svg" alt="" /></span
+            >Liberation</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./document.html">Documents</a></li>
+            <li><a href="./interview.html">Interview</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a href="./contact.html" class="btn">Contact us</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Interviews of Freedom Fighters -->
+    <section class="bg-white py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Title -->
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-gray-800">
+            Interviews of Freedom Fighters
+          </h2>
+          <p class="text-gray-600 mt-2 max-w-2xl mx-auto">
+            Hear the voices of the brave freedom fighters who fought for
+            Bangladesh’s independence. Their memories and stories keep the
+            spirit of the Liberation War alive.
+          </p>
+        </div>
+
+        <!-- Interviews Grid -->
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Interview 1 -->
+          <div class="card bg-gray-50 shadow-md rounded-2xl overflow-hidden">
+            <figure>
+              <img
+                src="./images/ff1.jpg"
+                alt="Freedom Fighter Interview"
+                class="w-full h-56 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h3 class="text-lg font-semibold">Interview: Abdul Karim</h3>
+              <p class="text-sm text-gray-500 mt-1">
+                Location: Khulna, Bangladesh
+              </p>
+              <p class="text-gray-600 text-sm mt-3">
+                A Mukti Bahini member sharing his experiences from the
+                frontlines — the struggles, the courage, and the hope that led
+                to victory.
+              </p>
+              <audio controls class="w-full mt-4">
+                <source src="" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+
+          <!-- Interview 2 -->
+          <div class="card bg-gray-50 shadow-md rounded-2xl overflow-hidden">
+            <figure>
+              <img
+                src="./images/ff2.jpg"
+                alt="Freedom Fighter Interview"
+                class="w-full h-56 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h3 class="text-lg font-semibold">Interview: Laila Begum</h3>
+              <p class="text-sm text-gray-500 mt-1">
+                Location: Rangpur, Bangladesh
+              </p>
+              <p class="text-gray-600 text-sm mt-3">
+                A nurse and freedom fighter who treated injured soldiers and
+                civilians during the war, sharing her untold stories of bravery.
+              </p>
+              <audio controls class="w-full mt-4">
+                <source src="" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+
+          <!-- Interview 3 -->
+          <div class="card bg-gray-50 shadow-md rounded-2xl overflow-hidden">
+            <figure>
+              <img
+                src="./images/ff3.jpg"
+                alt="Freedom Fighter Interview"
+                class="w-full h-56 object-cover"
+              />
+            </figure>
+            <div class="card-body">
+              <h3 class="text-lg font-semibold">Interview: Captain Rahman</h3>
+              <p class="text-sm text-gray-500 mt-1">
+                Location: Mymensingh, Bangladesh
+              </p>
+              <p class="text-gray-600 text-sm mt-3">
+                A sector commander recounts strategic missions and the
+                determination that united the people in the fight for freedom.
+              </p>
+              <audio controls class="w-full mt-4">
+                <source src="" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10"
+    >
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+  </body>
+</html>

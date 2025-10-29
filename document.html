@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Document</title>
     <!-- tailwind + daisy Ui setup-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -63,23 +63,82 @@
         </div>
       </div>
     </nav>
-    <div
-      class="card bg-base-100 min-h-[50vh] w-full max-w-sm mx-auto my-10 shrink-0 shadow-2xl"
-    >
-      <h2 class="text-center font-bold text-xl py-3">Contact With Us</h2>
-      <div class="card-body">
-        <fieldset class="fieldset">
-          <label class="label">Name</label>
-          <input type="text" class="input" placeholder="Name" />
-          <label class="label">Email</label>
-          <input type="email" class="input" placeholder="Email" />
-          <label class="label">Subject</label>
-          <input type="text" class="input" placeholder="Subject" />
-
-          <button class="btn btn-neutral mt-4">Send Message</button>
-        </fieldset>
+    <!-- Liberation War Documents -->
+    <section class="bg-gray-50 py-10 px-4 md:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-800">
+          Liberation War Documents
+        </h2>
       </div>
-    </div>
+
+      <!-- Category Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
+        <button class="btn btn-outline btn-primary">Historical Archives</button>
+        <button class="btn btn-outline btn-primary">Surrender Document</button>
+        <button class="btn btn-outline btn-primary">
+          Official Correspondence
+        </button>
+      </div>
+
+      <!-- Cards Grid -->
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <!-- Card 1 -->
+        <div
+          class="card bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+        >
+          <div class="card-body">
+            <h2 class="card-title text-lg font-semibold text-gray-800">
+              Proclamation of Independence
+            </h2>
+            <p class="text-gray-600 mt-2">
+              This proclamation declared the independence of Bangladesh and
+              stands as a core historical document from the Liberation War.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-primary w-full">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="card bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+        >
+          <div class="card-body">
+            <h2 class="card-title text-lg font-semibold text-gray-800">
+              Official Correspondence: Mujibnagar
+            </h2>
+            <p class="text-gray-600 mt-2">
+              Correspondence between provisional government offices and allied
+              authorities during the early months of the war.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-primary w-full">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="card bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
+        >
+          <div class="card-body">
+            <h2 class="card-title text-lg font-semibold text-gray-800">
+              Surrender Document (Excerpts)
+            </h2>
+            <p class="text-gray-600 mt-2">
+              Excerpts from the formal surrender marking the end of the conflict
+              and the beginning of independence.
+            </p>
+            <div class="card-actions justify-end mt-4">
+              <button class="btn btn-primary w-full">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- footer -->
     <footer
       class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10"
