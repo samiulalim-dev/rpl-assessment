@@ -63,21 +63,24 @@
         </div>
       </div>
     </nav>
+    <!-- login form -->
     <div
       class="card bg-base-100 min-h-[50vh] w-full max-w-sm mx-auto my-10 shrink-0 shadow-2xl"
     >
       <h2 class="text-center font-bold text-xl py-3">Contact With Us</h2>
       <div class="card-body">
-        <fieldset class="fieldset">
+        <form id="form-submit" class="fieldset">
           <label class="label">Name</label>
-          <input type="text" class="input" placeholder="Name" />
+          <input type="text" id="name" class="input" placeholder="Name" />
           <label class="label">Email</label>
-          <input type="email" class="input" placeholder="Email" />
+          <input type="email" id="email" class="input" placeholder="Email" />
           <label class="label">Subject</label>
-          <input type="text" class="input" placeholder="Subject" />
+          <input type="text" id="subject" class="input" placeholder="Subject" />
 
-          <button class="btn btn-neutral mt-4">Send Message</button>
-        </fieldset>
+          <button id="send-message" type="submit" class="btn btn-neutral mt-4">
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
     <!-- footer -->
@@ -105,5 +108,7 @@
         <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
