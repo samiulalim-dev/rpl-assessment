@@ -3,6 +3,8 @@ document.getElementById("send-message").addEventListener("click", function (e) {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+  const file = document.getElementById("file").value;
   if (!name) {
     return alert("please enter your name first");
   }
@@ -12,9 +14,17 @@ document.getElementById("send-message").addEventListener("click", function (e) {
   if (!subject) {
     return alert("please enter your subject");
   }
-  console.log(name);
-  console.log(email);
-  console.log(subject);
+  if (!message) {
+    return alert("please enter your message");
+  }
+  if (!file) {
+    return alert("Attach a file");
+  }
+
+  return alert("✅ congratulations Your message has been submitted");
+  // console.log(name);
+  // console.log(email);
+  // console.log(subject);
 });
 
 // for extra validation

@@ -59,7 +59,7 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a href="./contact.html" class="btn">Contact us</a>
+          <a href="./contact.html" class="btn btn-primary">Contact us</a>
         </div>
       </div>
     </nav>
@@ -76,8 +76,12 @@
           <input type="email" id="email" class="input" placeholder="Email" />
           <label class="label">Subject</label>
           <input type="text" id="subject" class="input" placeholder="Subject" />
+          <label class="label">Message</label>
+          <textarea name="" id="message" cols="10" rows="3"></textarea>
+          <label class="label">File</label>
+          <input type="file" id="file" class="file-input file-input-sm" />
 
-          <button id="send-message" type="submit" class="btn btn-neutral mt-4">
+          <button id="send-message" type="submit" class="btn btn-primary mt-4">
             Send Message
           </button>
         </form>
@@ -85,28 +89,11 @@
     </div>
     <!-- footer -->
     <footer
-      class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10"
+      class="footer sm:footer-horizontal footer-center bg-black/87 text-base-content p-4 py-8 text-white"
     >
-      <nav>
-        <h6 class="footer-title">Services</h6>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav>
-      <nav>
-        <h6 class="footer-title">Company</h6>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <h6 class="footer-title">Legal</h6>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
-      </nav>
+      <aside>
+        <p>Copyright © - All right reserved by LwA</p>
+      </aside>
     </footer>
 
     <script src="./js/script.js"></script>

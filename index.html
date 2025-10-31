@@ -54,37 +54,40 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a href="./index.html">Home</a></li>
-              <li><a href="./document.html">Documents</a></li>
-              <li><a href="./interview.html">Interview</a></li>
-              <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./document.html">Documents</a></li>
+            <li><a href="./interview.html">Interview</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a href="./contact.html" class="btn">Contact us</a>
+          <a href="./contact.html" class="btn btn-primary">Contact us</a>
         </div>
       </div>
     </nav>
 
     <!-- banner / carousel -->
-    <div class="carousel w-full shadow-lg overflow-hidden relative">
-      <div class="carousel-item w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
-        <img
-          src="./images/bangladesh2.png"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="carousel-item w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
-        <img
-          src="./images/bangladesh3.jpg"
-          class="w-full h-full object-cover"
-        />
-      </div>
-
-      <div class="carousel-item w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
-        <img
-          src="./images/bangladesh1.png"
-          class="w-full h-full object-cover"
-        />
+    <div
+      class="hero min-h-[70vh]"
+      style="background-image: url(./images/bangladesh2.png)"
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-lg">
+          <h1 class="mb-5 text-4xl font-bold">Liberation War Archive</h1>
+          <p class="mb-5">
+            Bangladesh Liberation War Archive, is a 'Library, Archive &
+            Research' organization, founded in 2007, working with collection,
+            preservation & distribution of historical documents & research on
+            the Liberation War of Bangladesh and Genocide of Innocent Bengali
+            People in 1971.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Muktijuddho_e-Archive"
+            target="_blank"
+            class="btn btn-primary"
+            >View More</a
+          >
+        </div>
       </div>
     </div>
 
@@ -188,70 +191,140 @@
           Liberation War Documents
         </h2>
       </div>
-
-      <!-- Category Buttons -->
-      <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
-        <button class="btn btn-outline btn-primary">Historical Archives</button>
-        <button class="btn btn-outline btn-primary">Surrender Document</button>
-        <button class="btn btn-outline btn-primary">
-          Official Correspondence
-        </button>
-      </div>
-
-      <!-- Cards Grid -->
-      <div
-        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-      >
-        <!-- Card 1 -->
-        <div
-          class="card bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
-        >
-          <div class="card-body">
-            <h2 class="card-title text-lg font-semibold text-gray-800">
-              Proclamation of Independence
-            </h2>
-            <p class="text-gray-600 mt-2">
-              This proclamation declared the independence of Bangladesh and
-              stands as a core historical document from the Liberation War.
-            </p>
-            <div class="card-actions justify-end mt-4">
-              <button class="btn btn-primary w-full">Learn More</button>
+      <!-- name of each tab group should be unique -->
+      <div class="tabs max-w-7xl mx-auto tabs-lift">
+        <input
+          type="radio"
+          name="my_tabs_3"
+          class="tab"
+          aria-label="Independence"
+        />
+        <div class="tab-content bg-base-100 border-base-300 p-6">
+          <!-- Card 1 -->
+          <div class="flex">
+            <div>
+              <img
+                src="https://www.albd.org/media/filer_public/f4/3a/f43af657-c9ea-4493-9c4c-7b435a1f4b5f/article-1-en.jpg"
+                alt=""
+                class="rounded-2xl h-96 max-w-6xl"
+              />
+            </div>
+            <div class="card overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="card-body">
+                <h2 class="card-title text-lg font-semibold text-gray-800">
+                  Proclamation of Independence
+                </h2>
+                <p class="text-gray-600 mt-2">
+                  In the first general election in Pakistan, in December 1970,
+                  the Bangladesh Awami League (BAL) won nearly every seat
+                  representing East Pakistan. That gave them an absolute
+                  majority in the National Assembly.[6] President Yahya Khan,
+                  however, kept them from taking power by postponing the
+                  convening of the assembly indefinitely.[7] Tensions mounted;
+                  by early March 1971, there was broad support in East Pakistan
+                  for independence, but the AL leadership thought ongoing
+                  negotiations with Yahya Khan might still reach a solution
+                  short of secession.[8] Yahya Khan spun out talks with the AL
+                  through 25 March, on the night of which he unleashed a
+                  military crackdown.[
+                </p>
+                <div class="card-actions justify-end mt-4">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Proclamation_of_Bangladeshi_Independence"
+                    target="_blank"
+                    class="btn btn-primary w-full"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 -->
-        <div
-          class="card bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
-        >
-          <div class="card-body">
-            <h2 class="card-title text-lg font-semibold text-gray-800">
-              Official Correspondence: Mujibnagar
-            </h2>
-            <p class="text-gray-600 mt-2">
-              Correspondence between provisional government offices and allied
-              authorities during the early months of the war.
-            </p>
-            <div class="card-actions justify-end mt-4">
-              <button class="btn btn-primary w-full">Learn More</button>
+        <input
+          type="radio"
+          name="my_tabs_3"
+          class="tab"
+          aria-label="Mujibnagar"
+          checked="checked"
+        />
+        <div class="tab-content bg-base-100 border-base-300 p-6">
+          <!-- Card 1 -->
+          <div class="flex">
+            <div>
+              <img
+                src="https://en.banglapedia.org/images/3/3b/MujibnagarGovernment.jpg"
+                alt=""
+                class="rounded-2xl h-96 max-w-2xl"
+              />
+            </div>
+            <div class="card overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="card-body">
+                <h2 class="card-title text-lg font-semibold text-gray-800">
+                  Official Correspondence: Mujibnagar
+                </h2>
+                <p class="text-gray-600 mt-2">
+                  "Official Correspondence: Mujibnagar" likely refers to a
+                  compiled volume or set of official documents, letters, and
+                  communications issued by the Mujibnagar Government (the
+                  Provisional Government of Bangladesh in exile) during the 1971
+                  Liberation War. This collection serves as a historical record
+                  of the administrative and diplomatic efforts of the nascent
+                  Bangladeshi government during the war.
+                </p>
+                <div class="card-actions justify-end mt-4">
+                  <a
+                    href="https://mujibnagar.meherpur.gov.bd/en"
+                    target="_blank"
+                    class="btn btn-primary w-full"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Card 3 -->
-        <div
-          class="card bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition-shadow"
-        >
-          <div class="card-body">
-            <h2 class="card-title text-lg font-semibold text-gray-800">
-              Surrender Document (Excerpts)
-            </h2>
-            <p class="text-gray-600 mt-2">
-              Excerpts from the formal surrender marking the end of the conflict
-              and the beginning of independence.
-            </p>
-            <div class="card-actions justify-end mt-4">
-              <button class="btn btn-primary w-full">Learn More</button>
+        <input
+          type="radio"
+          name="my_tabs_3"
+          class="tab"
+          aria-label="Surrender Document "
+        />
+        <div class="tab-content bg-base-100 border-base-300 p-6">
+          <!-- Card 1 -->
+          <div class="flex">
+            <div>
+              <img
+                src="https://weeklyblitz.net/wp-content/uploads/2024/12/Instrument-of-surrender_A-historic-moment-in-the-history-of-Bangladesh-600x337.jpg"
+                alt=""
+                class="rounded-2xl h-96 max-w-2xl"
+              />
+            </div>
+            <div class="card overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="card-body">
+                <h2 class="card-title text-lg font-semibold text-gray-800">
+                  Surrender Documents
+                </h2>
+                <p class="text-gray-600 mt-2">
+                  The primary surrender document for the Liberation War is the
+                  Instrument of Surrender, signed on December 16, 1971, at the
+                  Ramna Race Course in Dhaka. It formalized the surrender of the
+                  Pakistan Eastern Command to the joint forces of Bangladesh and
+                  India. Signed by Lieutenant General A. A. K. Niazi of Pakistan
+                  and Lieutenant General Jagjit Singh Aurora of the Allied
+                  Forces, the document legally ended the war and enabled the
+                  birth of Bangladesh.
+                </p>
+                <div class="card-actions justify-end mt-4">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Pakistani_Instrument_of_Surrender"
+                    target="_blank"
+                    class="btn btn-primary w-full"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -278,11 +351,16 @@
           <!-- Interview 1 -->
           <div class="card bg-gray-50 shadow-md rounded-2xl overflow-hidden">
             <figure>
-              <img
-                src="./images/ff1.jpg"
-                alt="Freedom Fighter Interview"
-                class="w-full h-56 object-cover"
-              />
+              <iframe
+                width="560"
+                height="200"
+                src="https://www.youtube.com/embed/9iUTqh8ubyI?si=l080YVTz_H87RTeg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </figure>
             <div class="card-body">
               <h3 class="text-lg font-semibold">Interview: Abdul Karim</h3>
@@ -294,21 +372,22 @@
                 frontlines — the struggles, the courage, and the hope that led
                 to victory.
               </p>
-              <audio controls class="w-full mt-4">
-                <source src="" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
             </div>
           </div>
 
           <!-- Interview 2 -->
           <div class="card bg-gray-50 shadow-md rounded-2xl overflow-hidden">
             <figure>
-              <img
-                src="./images/ff2.jpg"
-                alt="Freedom Fighter Interview"
-                class="w-full h-56 object-cover"
-              />
+              <iframe
+                width="560"
+                height="200"
+                src="https://www.youtube.com/embed/dMTwDg1Skx8?si=IfxL62r32Rb_P0Ke"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </figure>
             <div class="card-body">
               <h3 class="text-lg font-semibold">Interview: Laila Begum</h3>
@@ -319,21 +398,22 @@
                 A nurse and freedom fighter who treated injured soldiers and
                 civilians during the war, sharing her untold stories of bravery.
               </p>
-              <audio controls class="w-full mt-4">
-                <source src="" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
             </div>
           </div>
 
           <!-- Interview 3 -->
           <div class="card bg-gray-50 shadow-md rounded-2xl overflow-hidden">
             <figure>
-              <img
-                src="./images/ff3.jpg"
-                alt="Freedom Fighter Interview"
-                class="w-full h-56 object-cover"
-              />
+              <iframe
+                width="560"
+                height="200"
+                src="https://www.youtube.com/embed/DMQeWm5_OfU?si=BwK_fh85-rqjQCh3"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </figure>
             <div class="card-body">
               <h3 class="text-lg font-semibold">Interview: Captain Rahman</h3>
@@ -344,10 +424,6 @@
                 A sector commander recounts strategic missions and the
                 determination that united the people in the fight for freedom.
               </p>
-              <audio controls class="w-full mt-4">
-                <source src="" type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
             </div>
           </div>
         </div>
@@ -355,7 +431,6 @@
     </section>
 
     <!-- photo Gallery -->
-
     <section class="bg-white py-10 px-4 md:px-8">
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-gray-800">
@@ -366,94 +441,151 @@
           Bangladesh Liberation War.
         </p>
       </div>
+      <!-- name of each tab group should be unique -->
+      <div class="tabs tabs-lift">
+        <input type="radio" name="my_tabs_3" class="tab" aria-label="Events" />
+        <div class="tab-content bg-base-100 border-base-300 p-6">
+          <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/national-memmorial.jpg"
+                alt="Freedom Fighters"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/national-memmorial.jpg"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/bangladesh1.png"
+                alt="Liberation War Scene"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/bangladesh1.png"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/bangladesh2.png"
+                alt="Freedom Fighters"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/bangladesh2.png"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+          </div>
+        </div>
 
-      <!-- Gallery Grid -->
-      <div
-        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-      >
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/national-memmorial.jpg"
-            alt="Freedom Fighters"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
+        <input
+          type="radio"
+          name="my_tabs_3"
+          class="tab"
+          aria-label="Locations"
+          checked="checked"
+        />
+        <div class="tab-content bg-base-100 border-base-300 p-6">
+          <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/bangladesh3.jpg"
+                alt="Muktijoddha Museum"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/bangladesh3.jpg"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/betar-kendra.jpg"
+                alt="War Refugees"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/betar-kendra.jpg"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/ff1.jpg"
+                alt="Bangladesh Flag 1971"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/ff1.jpg"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/bangladesh1.png"
-            alt="Liberation War Scene"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/bangladesh2.png"
-            alt="Freedom Fighters"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/bangladesh3.jpg"
-            alt="Muktijoddha Museum"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/betar-kendra.jpg"
-            alt="War Refugees"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/ff1.jpg"
-            alt="Bangladesh Flag 1971"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/ff2.jpg"
-            alt="Victory Celebration"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="./images/ff3.jpg"
-            alt="Mukti Bahini"
-            class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
-          />
+
+        <input type="radio" name="my_tabs_3" class="tab" aria-label="Themes" />
+        <div class="tab-content bg-base-100 border-base-300 p-6">
+          <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/ff2.jpg"
+                alt="Victory Celebration"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/ff2.jpg"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="./images/ff3.jpg"
+                alt="Mukti Bahini"
+                class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="./images/ff3.jpg"
+                target="_blank"
+                class="btn btn-primary w-full rounded-none"
+                >Download Photo</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- footer -->
     <footer
-      class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10"
+      class="footer sm:footer-horizontal footer-center bg-black/87 text-base-content p-4 py-8 text-white"
     >
-      <nav>
-        <h6 class="footer-title">Services</h6>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav>
-      <nav>
-        <h6 class="footer-title">Company</h6>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <h6 class="footer-title">Legal</h6>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
-      </nav>
+      <aside>
+        <p>Copyright © - All right reserved by LwA</p>
+      </aside>
     </footer>
     <!-- javascript for carousel -->
     <script>
